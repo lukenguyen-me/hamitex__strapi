@@ -15,7 +15,7 @@
     "content": {
       "type": "richtext"
     },
-    "answers": {
+    "options": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::answer.answer",
@@ -26,6 +26,9 @@
       "relation": "manyToOne",
       "target": "api::exam.exam",
       "inversedBy": "questions"
+    },
+    "answers": {
+      "type": "json"
     }
   }
 }

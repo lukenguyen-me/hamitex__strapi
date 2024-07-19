@@ -22,7 +22,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::question.question",
-      "inversedBy": "answers"
+      "inversedBy": "options"
     }
   }
 }

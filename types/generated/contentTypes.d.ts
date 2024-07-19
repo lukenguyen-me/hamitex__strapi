@@ -866,7 +866,7 @@ export interface ApiQuestionQuestion extends Schema.CollectionType {
   };
   attributes: {
     content: Attribute.RichText;
-    answers: Attribute.Relation<
+    options: Attribute.Relation<
       'api::question.question',
       'oneToMany',
       'api::answer.answer'
@@ -876,6 +876,7 @@ export interface ApiQuestionQuestion extends Schema.CollectionType {
       'manyToOne',
       'api::exam.exam'
     >;
+    answers: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
