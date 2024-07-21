@@ -831,6 +831,7 @@ export interface ApiExamExam extends Schema.CollectionType {
     singularName: 'exam';
     pluralName: 'exams';
     displayName: 'Exam';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -843,6 +844,7 @@ export interface ApiExamExam extends Schema.CollectionType {
       'oneToMany',
       'api::question.question'
     >;
+    key: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
