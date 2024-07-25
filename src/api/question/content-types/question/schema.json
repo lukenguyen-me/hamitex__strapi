@@ -29,6 +29,9 @@
     },
     "answers": {
       "type": "json"
+    },
+    "singleChoice": {
+      "type": "boolean"
     }
   }
 }

@@ -879,6 +879,7 @@ export interface ApiQuestionQuestion extends Schema.CollectionType {
       'api::exam.exam'
     >;
     answers: Attribute.JSON;
+    singleChoice: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
